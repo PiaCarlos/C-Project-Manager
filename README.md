@@ -1,22 +1,24 @@
 # C++ Project Manager
 
-This project is a simple command-line project management system written in C++.
+This project is a simple project management system written in C++.
 
-It allows users to create projects, add team members, create tasks, assign tasks to members, and display project information.
+It manages projects, team members, tasks, task assignments, task status, and task filtering. The program is run from the command line and demonstrates object-oriented programming and dynamic memory management in C++.
 
 ## Features
 
 - Create projects
-- Add team members
-- Create tasks with priority and status
+- Add team members with roles and maximum task limits
+- Create tasks with descriptions, priorities, and statuses
 - Assign tasks to team members
-- Limit the number of tasks a member can receive
+- Prevent team members from receiving more than their maximum number of tasks
 - Display all projects and their tasks
 - Display all team members and their assigned tasks
-- Search for projects and team members
-- Get tasks by member
+- Find a project by ID
+- Find a team member by ID
+- Get the assigned member for a task
+- Get all tasks assigned to a specific member
 - Filter tasks by status
-- Test deep copying with a copy constructor
+- Test deep copying with a custom copy constructor
 
 ## Concepts Used
 
@@ -28,11 +30,11 @@ It allows users to create projects, add team members, create tasks, assign tasks
 - Encapsulation
 - Getter methods
 - Pass-by-reference
-- Basic object-oriented programming
+- Object-oriented design
 
 ## How to Run
 
 Compile the program:
 
 ```bash
-g++ assignment2.cpp -o project_manager
+g++ project_Manager.cpp -o project_manager
